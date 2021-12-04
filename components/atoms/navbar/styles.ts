@@ -10,6 +10,7 @@ export const useStyles = makeStyles((theme) => ({
         transition: theme.transitions.create('all', {
             duration: theme.transitions.duration.standard
         }),
+        color: grey[100],
         '&:hover': {
             color: theme.palette.primary.main
         },
