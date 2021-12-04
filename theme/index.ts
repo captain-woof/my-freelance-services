@@ -16,22 +16,22 @@ export const theme = createTheme({
     },
     typography: {
         allVariants: {
-            fontFamily: "'Lato', sans-serif"
+            fontFamily: "Poppins, sans-serif"
         },
         h1: {
-            fontFamily: '"Gochi Hand", cursive'
+            fontFamily: '"Paytone One", sans-serif',
         },
         h2: {
-            fontFamily: '"Gochi Hand", cursive'
+            fontFamily: '"Paytone One", sans-serif',
         },
         h3: {
-            fontFamily: '"Gochi Hand", cursive'
+            fontFamily: '"Paytone One", sans-serif',
         },
         h4: {
-            fontFamily: '"Gochi Hand", cursive'
+            fontFamily: '"Paytone One", sans-serif'
         },
         h5: {
-            fontFamily: '"Gochi Hand", cursive'
+            fontFamily: '"Paytone One", sans-serif'
         }
     }
 })

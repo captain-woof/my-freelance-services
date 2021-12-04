@@ -1,17 +1,7 @@
-import { useNavbar } from '../hooks/navbar'
-import { useEffect } from 'react'
+import Home from "../components/pages/home";
 
-const Home = () => {
-  const { setNavbarTransparent } = useNavbar()
-
-  // Set navbar background to transparent for homepage
-  useEffect(() => {
-    setNavbarTransparent(true)
-  }, [setNavbarTransparent])
-
+export default function Index() {
   return (
-    <></>
+    <Home />
   )
 }
-
-export default Home
