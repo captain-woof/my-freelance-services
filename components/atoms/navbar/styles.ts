@@ -2,18 +2,20 @@ import { makeStyles } from '@material-ui/core/styles'
 import { grey } from '@material-ui/core/colors'
 
 export const useStyles = makeStyles((theme) => ({
+    navbarOuter: {
+        boxShadow: 'none'
+    },
     navbarInner: {
         minHeight: '72px',
-        padding: '0.5rem 1rem'
+        padding: '0.5rem 1rem',
+        "@media (min-width: 768px)": {
+            "&": {
+                padding: '0.5rem 2rem'
+            }
+        }
     },
     title: {
-        transition: theme.transitions.create('all', {
-            duration: theme.transitions.duration.standard
-        }),
         color: grey[100],
-        '&:hover': {
-            color: theme.palette.primary.main
-        },
         '@media (max-width: 768px)': {
             '&': { fontSize: '2rem' }
         },
@@ -41,10 +43,13 @@ export const useStyles = makeStyles((theme) => ({
     navButton: {
         color: grey[100]
     },
-    navMenuIconMobile: {
+    navMenuIconButtonMobile: {
         display: 'block',
         '@media (min-width: 480px)': {
             '&': { display: 'none' }
         }
+    },
+    navMenuIconMobile: {
+        color: grey[100]
     }
 }))

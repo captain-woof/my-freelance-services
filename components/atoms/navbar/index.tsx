@@ -25,24 +25,27 @@ export default function Navbar() {
     }, [setMenuOpen])
 
     return (
-        <AppBar color={navbarTransparent ? 'transparent' : 'primary'}>
+        <AppBar color={navbarTransparent ? 'transparent' : 'primary'} className={styles.navbarOuter}>
             <Toolbar className={styles.navbarInner}>
                 <Box className={styles.navbarContent}>
                     <Link href="/" passHref><a>
                         <Typography variant='h3' className={styles.title}>
-                            Freelance Services by Sohail
+                            Sohail
                         </Typography>
                     </a></Link>
                     <ButtonGroup className={styles.navButtons} variant='text' title='Navigation buttons'>
-                        <Link href="/about" passHref><a>
-                            <Button className={styles.navButton}>About</Button>
-                        </a></Link>
                         <Link href="/services" passHref><a>
                             <Button className={styles.navButton}>Services</Button>
                         </a></Link>
+                        <Link href="/about" passHref><a>
+                            <Button className={styles.navButton}>About</Button>
+                        </a></Link>
+                        <Link href="/contact" passHref><a>
+                            <Button className={styles.navButton}>Contact</Button>
+                        </a></Link>
                     </ButtonGroup>
-                    <IconButton ref={menuIconRef} className={styles.navMenuIconMobile} onClick={toggleMenuOpen}>
-                        <MenuOpenIcon />
+                    <IconButton ref={menuIconRef} className={styles.navMenuIconButtonMobile} onClick={toggleMenuOpen}>
+                        <MenuOpenIcon className={styles.navMenuIconMobile}/>
                     </IconButton>
                     <Menu anchorEl={menuIconRef.current} keepMounted open={menuOpen} onClose={toggleMenuOpen}>
                         <MenuItem onClick={toggleMenuOpen}>
@@ -50,6 +53,9 @@ export default function Navbar() {
                         </MenuItem>
                         <MenuItem onClick={toggleMenuOpen}>
                             <Link href="/about" passHref><a>About</a></Link>
+                        </MenuItem>
+                        <MenuItem onClick={toggleMenuOpen}>
+                            <Link href="/contact" passHref><a>Contact</a></Link>
                         </MenuItem>
                     </Menu>
                 </Box>
