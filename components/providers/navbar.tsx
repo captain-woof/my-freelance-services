@@ -4,12 +4,12 @@ export const NavbarContext = createContext<{
     navbarTransparent: boolean
     setNavbarTransparent: Dispatch<SetStateAction<boolean>> | null
 }>({
-    navbarTransparent: true,
+    navbarTransparent: false,
     setNavbarTransparent: null
 })
 
 export default function NavbarProvider({ children }: { children: ReactNode }) {
-    const [navbarTransparent, setNavbarTransparent] = useState<boolean>(true)
+    const [navbarTransparent, setNavbarTransparent] = useState<boolean>(false)
     return (
         <NavbarContext.Provider value={{
             navbarTransparent,
