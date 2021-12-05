@@ -1,17 +1,11 @@
 import { useNavbar } from '../../../hooks/navbar'
 import { useEffect } from 'react'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
-import ButtonGroup from '@material-ui/core/ButtonGroup'
-import { useStyles } from './stylesMui'
 import styles from './styles.module.css'
 import Link from 'next/link'
-import { generateRandomKey } from '../../../utils/keys'
+import ContainerAdjustedForNavbar from '../../atoms/container'
+import Button from '../../atoms/button'
 
 const Home = () => {
-  const stylesMui = useStyles()
-
   // Set navbar background to transparent for homepage
   const { setNavbarTransparent } = useNavbar()
   useEffect(() => {
@@ -19,20 +13,28 @@ const Home = () => {
   }, [setNavbarTransparent])
 
   return (
-    <Container className={stylesMui.container} key={generateRandomKey('homepageContainer')}>
+    <ContainerAdjustedForNavbar style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      overflow: 'hidden',
+      flexDirection: 'column',
+      gap: '2rem',
+      backgroundColor: 'var(--color-primary)'
+    }}>
       <video className={styles.videoBg} autoPlay muted loop src="/assets/videos/landing_page_bg.m4v" title="Freelance web developer" />
-      <Typography variant='h2' className={stylesMui.title}>
+      <h2 className={styles.title}>
         Hire me to build your online presence
-      </Typography>
-      <ButtonGroup className={stylesMui.buttonGroup}>
+      </h2>
+      <div className={styles.buttonGroup}>
         <Link href="/contact" passHref><a>
-          <Button variant='outlined' className={stylesMui.btnOutlined}>Contact</Button>
+          <Button style={{ border: '1px solid var(--color-white-light)' }} outlined>Contact</Button>
         </a></Link>
         <Link href="/services" passHref><a>
-          <Button variant='contained' color='primary'>View services</Button>
+          <Button>View services</Button>
         </a></Link>
-      </ButtonGroup>
-    </Container>
+      </div>
+    </ContainerAdjustedForNavbar>
   )
 }
 

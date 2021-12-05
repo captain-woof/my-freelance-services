@@ -5,3 +5,23 @@
     object-fit: cover;
     inset: 0;
 }
+
+.title {
+    z-index: 2;
+    color: var(--color-white-light);
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-self: flex-start;
+    z-index: 2;
+}
+
+@media (min-width: 900px) {
+    .buttonGroup {
+        align-self: center;
+    }
+}

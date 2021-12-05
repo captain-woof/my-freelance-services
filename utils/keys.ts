@@ -1,1 +1,0 @@
-export const generateRandomKey = (prefix: string) => `${prefix}-${Math.random()}`
