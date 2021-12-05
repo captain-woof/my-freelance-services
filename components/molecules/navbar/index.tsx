@@ -2,7 +2,7 @@ import { useNavbar } from '../../../hooks/navbar'
 import Link from 'next/link'
 import { useState, useCallback } from 'react'
 import styles from './styles.module.css'
-import Button from '../button'
+import Button from '../../atoms/button'
 import { HiMenu as MenuIcon } from 'react-icons/hi'
 import cx from 'classnames'
 
@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className={styles.navButtons} title='Navigation buttons'>
                 {navItems.map(({ displayName, href }) => (
                     <Link key={displayName} href={href} passHref><a>
-                        <Button outlined>{displayName}</Button>
+                        <Button outlined noShadow>{displayName}</Button>
                     </a></Link>
                 ))}
             </div>

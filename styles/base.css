@@ -57,12 +57,13 @@
     --color-white-light: #ffffff;
     --color-white-dark: #f0f0f0;
     /* Navbar height */
-    --height-navbar: 64px;
+    --height-navbar: 72px;
     /* Transitions */
     --tr-fast: all 0.25s linear;
     --tr-normal: all 0.5s linear;
     /* Shadow */
-    --shadow-normal: 0 4px 4px var(--color-black-secondary);
+    --shadow-normal: 0 2px 16px rgba(102, 102, 102, 0.61);
+    --shadow-small: 0 2px 2px var(--color-black-light);
 }
 /* RESET */
 /* Set rem */

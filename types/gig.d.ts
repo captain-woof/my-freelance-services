@@ -2,6 +2,8 @@ export interface Gigs {
     [index: number]: Gig
 }
 
+export interface Gigs extends Array<Gig> {}
+
 export interface Gig {
     "gig_id": number
     "is_featured": boolean

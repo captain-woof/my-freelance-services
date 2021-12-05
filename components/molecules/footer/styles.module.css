@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 15vh;
+    height: max-content;
+    background-color: var(--color-primary-dark);
+    padding: var(--sp-300) var(--sp-400);
+    color: var(--color-white);
+    gap: 0.25rem;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.socialIcon {
+    fill: var(--color-white);
+}

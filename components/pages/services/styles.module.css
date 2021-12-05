@@ -7,5 +7,45 @@
 }
 
 .grid {
-    margin-top: 2rem;
+    margin-top: var(--sp-600);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    padding-bottom: var(--sp-700);
+}
+
+.gigCard {
+    max-width: 300px;
+    box-shadow: var(--shadow-normal);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: var(--color-white-light);
+    border: 2px solid transparent;
+    height: max-content;
+}
+
+.gigCardImgContainer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.gigTitle {
+    margin-bottom: 0.5rem;
+}
+
+.gigPrice{
+    color: var(--color-black-light);
+}
+
+.gigCardActions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    align-items: center;
 }
