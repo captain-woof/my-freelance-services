@@ -1,4 +1,4 @@
-import { CSSProperties, ReactNode } from 'react'
+import { ButtonHTMLAttributes, CSSProperties, ReactNode } from 'react'
 import styles from './styles.module.css'
 
 interface IButton {
@@ -6,11 +6,12 @@ interface IButton {
     style?: CSSProperties
     outlined?: boolean
     noShadow?: boolean
+    buttonProps?: ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-export default function Button({ children, outlined = false, style, noShadow = false }: IButton) {
+export default function Button({ children, outlined = false, style, noShadow = false, buttonProps }: IButton) {
     return (
-        <button className={outlined ? styles.button_outlined : styles.button_filled} style={{...style, boxShadow: noShadow ? "" : "var(--shadow-normal)"}}>
+        <button className={outlined ? styles.button_outlined : styles.button_filled} style={{...style, boxShadow: noShadow ? "" : "var(--shadow-normal)"}} {...buttonProps}>
             {children}
         </button>
     )

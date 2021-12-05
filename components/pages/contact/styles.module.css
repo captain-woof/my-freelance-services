@@ -1,0 +1,72 @@
+/* Below styles for my image */
+
+.myImage {
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem;
+    height: calc(100vh - var(--height-navbar));
+    object-position: center top;
+}
+
+@media (min-width: 520px) {
+    .myImage {
+        object-position: center center;
+    }
+}
+
+/* Below styles for contact form */
+
+.contactForm {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--color-white-light);
+    margin: 1rem;
+    padding-bottom: var(--sp-600);
+}
+
+.contactForm > * + * {
+    margin-top: 1rem;
+}
+
+.statusMsg {
+    color: var(--color-primary);
+}
+
+/* Below styles for textfield */
+
+.textfield {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textfield > * + * {
+    margin-top: 0.25rem;
+}
+
+.label {
+    color: var(--color-black-light);
+}
+
+.label:focus {
+    color: var(--color-primary-light);
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1.5px solid var(--color-black-light);
+    width: 100%;
+    resize: none;
+}
+
+.input:focus {
+    border: 1.5px solid var(--color-primary);
+}
+
+.error {
+    color: #f33022;
+    font-size: var(--fs-300);
+}

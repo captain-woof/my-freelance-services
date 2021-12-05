@@ -21,6 +21,11 @@
     background-color: var(--color-primary-dark);
 }
 
+.button_filled:disabled {
+    background-color: var(--color-grey);
+    opacity: 0.8;
+}
+
 .button_outlined {
     background-color: transparent;
     border: 1px solid transparent;
