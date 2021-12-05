@@ -7,6 +7,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup'
 import { useStyles } from './stylesMui'
 import styles from './styles.module.css'
 import Link from 'next/link'
+import { generateRandomKey } from '../../../utils/keys'
 
 const Home = () => {
   const stylesMui = useStyles()
@@ -18,10 +19,10 @@ const Home = () => {
   }, [setNavbarTransparent])
 
   return (
-    <Container className={stylesMui.container}>
-      <video className={styles.videoBg} autoPlay muted loop src="/assets/videos/landing_page_bg.m4v" />
+    <Container className={stylesMui.container} key={generateRandomKey('homepageContainer')}>
+      <video className={styles.videoBg} autoPlay muted loop src="/assets/videos/landing_page_bg.m4v" title="Freelance web developer" />
       <Typography variant='h2' className={stylesMui.title}>
-        Hire me to build your idea
+        Hire me to build your online presence
       </Typography>
       <ButtonGroup className={stylesMui.buttonGroup}>
         <Link href="/contact" passHref><a>

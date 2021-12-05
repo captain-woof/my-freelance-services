@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core"
 import { grey } from '@material-ui/core/colors'
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         alignItems: 'center',
@@ -9,7 +9,8 @@ export const useStyles = makeStyles({
         height: '100vh',
         overflow: 'hidden',
         flexDirection: 'column',
-        gap: '2rem'
+        gap: '2rem',
+        backgroundColor: theme.palette.primary.main
     },
     title: {
         zIndex: 2,
@@ -31,4 +32,4 @@ export const useStyles = makeStyles({
         color: grey[100],
         boxShadow: `0 0 2px ${grey[100]}`
     }
-})
+}))
