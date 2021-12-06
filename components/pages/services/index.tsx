@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Gigs } from "../../../types/gig"
 import GigCard from "./gigCard"
 import Footer from "../../molecules/footer"
+import ServicesSeo from "../../meta/seo/services"
 
 export default function Services({ myGigs }: { myGigs: Gigs }) {
     // Set navbar background to primary
@@ -16,6 +17,7 @@ export default function Services({ myGigs }: { myGigs: Gigs }) {
 
     return (
         <>
+            <ServicesSeo />
             <ContainerAdjustedForNavbar style={{
                 padding: '1rem 2rem'
             }}>
