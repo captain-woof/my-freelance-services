@@ -3,6 +3,7 @@
     min-height: var(--height-navbar);
     padding: 0.5rem 1rem;
     color: var(--color-white-light);
+    background-color: var(--color-primary);
     width: 100%;
     position: sticky;
     display: flex;
