@@ -8,12 +8,6 @@
     object-position: center top;
 }
 
-@media (min-width: 520px) {
-    .myImage {
-        object-position: center center;
-    }
-}
-
 /* Below styles for contact form */
 
 .contactForm {
