@@ -22,7 +22,7 @@ export default async function handler({ query }: NextApiRequest, res: NextApiRes
             replyTo: `Sohail Saha <${process.env.MY_EMAIL}>`,
             cc: `Sohail Saha <${process.env.MY_EMAIL}>`,
             subject: `Re: ${subject}`,
-            html: `<p>Hey there, ${name}!<br/>I got your email, and I will get back to you as soon as I read your message.</p><p>With regards,<br/>Sohail Saha</p><br/><b>ORIGINAL MESSAGE</b><br/><blockquote>${body}</blockquote>`
+            html: `<p>Hey there, ${name.split(" ")[0]}!</p><p>I got your message, and I will get back to you here, as soon as I can. You may reply to this conversation if you forgot to mention something.</p><p>With regards,<br/>Sohail Saha</p><br/><b>ORIGINAL MESSAGE</b><br/><blockquote>${body}</blockquote>`
         }
 
         try {
