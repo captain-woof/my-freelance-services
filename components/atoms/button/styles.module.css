@@ -9,6 +9,11 @@
     border-radius: 4px;
 }
 
+.button_outlined:disabled,
+.button_filled:disabled {
+    opacity: 0.6;
+}
+
 .button_filled {
     background-color: var(--color-primary);
 }
@@ -19,11 +24,6 @@
 
 .button_filled:active {
     background-color: var(--color-primary-dark);
-}
-
-.button_filled:disabled {
-    background-color: var(--color-grey);
-    opacity: 0.8;
 }
 
 .button_outlined {
