@@ -28,9 +28,14 @@
     padding: 3rem;
 }
 
+.title1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* For title */
 @media (max-width: 768px) {
-    .title {
+    .title2 {
         text-align: center;
         width: 100%;
     }

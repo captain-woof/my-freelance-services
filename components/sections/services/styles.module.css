@@ -73,3 +73,14 @@
     color: var(--color-black-light);
     opacity: 0.9;
 }
+
+.custom_service {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--color-secondary);
+    max-width: 800px;
+    color: var(--color-white);
+    text-align: center;
+}
