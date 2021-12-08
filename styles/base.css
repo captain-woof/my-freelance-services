@@ -79,7 +79,7 @@ html, body {
     word-break: break-word;
     color: var(--color-black);
     font-family: var(--ff-normal);
-    background-color: var(--color-white);
+    background-color: var(--color-primary);
 }
 /* Border box */
 *, *::before, *::after {

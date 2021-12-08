@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 export default function LandingSection() {
     return (
-        <ContainerAdjustedForNavbar fullPageFixed style={{ backgroundColor: "var(--color-primary)" }}>
+        <ContainerAdjustedForNavbar fullPageFixed>
             <picture className={styles.background_img}>
                 <source srcSet="assets/images/landing_page_bg.webp" type="image/webp" />
                 <img src="assets/images/landing_page_bg.gif" alt="Animated website image" />
