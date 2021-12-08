@@ -42,10 +42,10 @@ export default function ServicesSection() {
                             </div>
                         </div>
                     ))}
-                    <h3 style={{ width: 'fit-content' }} className={styles.custom_service}>
-                        Oh and yes, I do custom stuff too.
-                    </h3>
                 </div>
+                <h3 className={styles.custom_service}>
+                    Oh and yes, I do custom stuff too.
+                </h3>
             </main>
         </ContainerAdjustedForNavbar>
     )

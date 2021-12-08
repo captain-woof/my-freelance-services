@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 
 export default function ContactSection() {
     return (
-        <ContainerAdjustedForNavbar id="contact" fullPageFixed>
+        <ContainerAdjustedForNavbar id="contact">
             <h1 className={styles.title1}>Want to hire me?</h1>
             <div className={styles.twoCols}>
                 <div className={styles.col1}>

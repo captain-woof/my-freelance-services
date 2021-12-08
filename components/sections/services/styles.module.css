@@ -3,7 +3,7 @@
 }
 
 .title {
-    margin: 2rem 0 4rem 0;
+    margin: 4rem 0 4rem 0;
     text-align: center;
 }
 
@@ -66,9 +66,9 @@
     width: 100%;
     padding: 1rem;
     border-radius: 12px;
-    overflow: hidden;
     background-color: var(--color-secondary);
     max-width: 800px;
     color: var(--color-white);
     text-align: center;
+    margin: 3rem auto 0 auto;
 }
