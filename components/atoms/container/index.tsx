@@ -7,11 +7,12 @@ interface IContainerAdjustedForNavbar {
     children: ReactNode
     style?: CSSProperties
     fullPageFixed?: boolean
+    id?: string
 }
 
-export default function ContainerAdjustedForNavbar({ children, style, fullPageFixed = false }: IContainerAdjustedForNavbar) {
+export default function ContainerAdjustedForNavbar({ children, style, fullPageFixed = false, id }: IContainerAdjustedForNavbar) {
     return (
-        <section className={cx(styles.container, fullPageFixed && styles.fixed)} style={style}>
+        <section className={cx(styles.container, fullPageFixed && styles.fixed)} style={style} id={id}>
             {children}
         </section>
     )

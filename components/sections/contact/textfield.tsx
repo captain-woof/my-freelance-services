@@ -1,4 +1,4 @@
-import { ChangeEventHandler, HTMLInputTypeAttribute, InputHTMLAttributes } from 'react'
+import { ChangeEventHandler, CSSProperties, HTMLInputTypeAttribute, InputHTMLAttributes } from 'react'
 import styles from './styles.module.css'
 
 interface ITextfield {
@@ -13,11 +13,12 @@ interface ITextfield {
     large?: boolean
     placeholder?: string
     type?: HTMLInputTypeAttribute | undefined
+    styleTextfield?: CSSProperties
 }
 
-export default function Textfield({ value, onChangeTextField, onChangeTextArea, label, name, error, textFieldProps, textAreaProps, large = false, placeholder, type = 'text' }: ITextfield) {
+export default function Textfield({ value, onChangeTextField, onChangeTextArea, label, name, error, textFieldProps, textAreaProps, large = false, placeholder, type = 'text', styleTextfield }: ITextfield) {
     return (
-        <div className={styles.textfield}>
+        <div className={styles.textfield} style={styleTextfield}>
             <label htmlFor={`${label}-input`} className={styles.label}>{label}</label>
             {large
                 ? <textarea id={`${label}-input`} className={styles.input} onChange={onChangeTextArea} value={value} name={name} {...textAreaProps} rows={4} />

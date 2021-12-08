@@ -2,7 +2,7 @@
 .button_filled {
     font-weight: 600;
     font-family: var(--ff-normal);
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     transition: var(--tr-normal);
     cursor: pointer;
     border-radius: 4px;
@@ -15,15 +15,15 @@
 
 .button_filled {
     color: var(--color-white);
-    background-color: var(--color-black);
+    background-color: var(--color-secondary);
 }
 
 .button_filled:hover {
-    background-color: var(--color-black-dark);
+    background-color: var(--color-secondary-light);
 }
 
 .button_filled:active {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-secondary-dark);
 }
 
 .button_outlined {

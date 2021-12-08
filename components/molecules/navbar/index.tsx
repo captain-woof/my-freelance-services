@@ -7,7 +7,7 @@ import cx from 'classnames'
 
 const navItems = [
     { displayName: "Services", href: "#services" },
-    { displayName: "About", href: "#about" },
+    { displayName: "Portfolio", href: "#portfolio" },
     { displayName: "Contact", href: "#contact" }
 ]
 

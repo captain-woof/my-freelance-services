@@ -43,13 +43,12 @@ export default function ContactForm() {
 
     return (
         <form className={styles.contactForm} onSubmit={formik.handleSubmit}>
-            <h3>Wanna talk?</h3>
             <Textfield error={formik.touched.from ? formik.errors.from : null} value={formik.values.from} onChangeTextField={formik.handleChange} label="Email" name="from" placeholder='Your email address' type="email" />
             <Textfield error={formik.touched.name ? formik.errors.name : null} value={formik.values.name} onChangeTextField={formik.handleChange} label="Name" name="name" placeholder='Enter your name' />
             <Textfield error={formik.touched.subject ? formik.errors.subject : null} value={formik.values.subject} onChangeTextField={formik.handleChange} label="Subject" name="subject" placeholder='Enter subject' />
-            <Textfield error={formik.touched.body ? formik.errors.body : null} value={formik.values.body} onChangeTextArea={formik.handleChange} label="Body" name="body" large placeholder='Type your message...' />
+            <Textfield error={formik.touched.body ? formik.errors.body : null} value={formik.values.body} onChangeTextArea={formik.handleChange} label="Body" name="body" large placeholder='Type your message...' styleTextfield={{ marginBottom: "1.5rem" }} />
             {emailError &&
-                <div className={styles.error}>Could not send message. Try again!</div>
+                <div className={styles.statusMsg}>Could not send message. Try again!</div>
             }
             {emailSent
                 ? <div className={styles.statusMsg}>Message sent! Check your inbox.</div>

@@ -80,6 +80,7 @@ html, body {
     color: var(--color-black);
     font-family: var(--ff-normal);
     background-color: var(--color-primary);
+    scroll-behavior: smooth;
 }
 /* Border box */
 *, *::before, *::after {
@@ -100,9 +101,7 @@ p, form, nav, footer, header {
     font-size: var(--fs-400);
     line-height: var(--lh-max);
 }
-* > * + p {
-    margin-top: var(--sp-400);
-}
+
 h5 {
     font-size: var(--fs-500);
     line-height: var(--lh-max);
@@ -150,4 +149,8 @@ a:hover {
 button, input {
     outline: none;
     border: none;
+}
+
+img {
+    max-width: 100%;
 }
