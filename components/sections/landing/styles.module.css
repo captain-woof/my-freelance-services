@@ -1,0 +1,44 @@
+.content {
+    padding: var(--sp-400) var(--sp-600);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: var(--sp-200);
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: var(--sp-400);
+}
+
+/* Below style for background image */
+
+.background_img {
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    right: calc(50vw - 50%);
+    height: 50%;
+    opacity: 0.6;
+}
+
+
+
+@media (min-width: 768px) {
+    .background_img {
+        transform: scale(1.0);
+        height: 100%;
+        opacity: 1.0;
+    }
+}
+
+.background_img > * {
+    height: 100%;
+    object-fit: cover;
+}

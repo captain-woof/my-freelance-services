@@ -1,6 +1,5 @@
 .button_outlined,
 .button_filled {
-    color: var(--color-white);
     font-weight: 600;
     font-family: var(--ff-normal);
     padding: 0.5rem 1rem;
@@ -15,23 +14,26 @@
 }
 
 .button_filled {
-    background-color: var(--color-primary);
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 
 .button_filled:hover {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-black-dark);
 }
 
 .button_filled:active {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
 }
 
 .button_outlined {
+    color: var(--color-black-light);
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-black-light);
 }
 
 .button_outlined:hover {
-    background-color: #22222255;
-    border: 1px solid var(--color-white-light);
+    color: var(--color-white);
+    background-color: var(--color-black-light);
+    border: 1px solid transparent;
 }

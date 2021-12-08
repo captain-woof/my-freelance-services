@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function MainSeo() {
+export default function Seo() {
     return (
         <Head>
             <title>Web Developer Freelancer for Hire</title>

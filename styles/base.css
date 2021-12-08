@@ -1,3 +1,6 @@
+/* Font families */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
 /* CUSTOM PROPERTIES */
 :root {
     /* Constants for Base font size (fluid) */
@@ -44,27 +47,30 @@
     --sp-800: calc(var(--sp-factor)* 5);
     --sp-900: calc(var(--sp-factor)* 6);
     /* Font families */
-    --ff-normal: 'Poppins', sans-serif;
-    --ff-heading: "Paytone One", sans-serif;
+    --ff-normal: 'Raleway', sans-serif;
+    --ff-heading: "DM Serif Display", serif;
     /* Theme colors */
-    --color-primary: #2f8a3b;
-    --color-primary-light: #46a152;
-    --color-primary-dark: #2b7a36;
-    --color-black: #3e3e3e;
-    --color-black-light: #505050;
-    --color-black-dark: #222222;
-    --color-white: #fafafa;
-    --color-white-light: #ffffff;
-    --color-white-dark: #f0f0f0;
-    --color-grey: #929292;
+    --color-primary: #F7B32B;
+    --color-primary-light: #fcc048;
+    --color-primary-dark: #f1a917;
+    --color-secondary: #3891A6;
+    --color-secondary-light: #45a3b8;
+    --color-secondary-dark: #2a7f92;
+    --color-black: #001011;
+    --color-black-light: #042022;
+    --color-black-dark: #000505;
+    --color-white: #f5f5f5;
+    --color-white-light: #fcfcfc;
+    --color-white-dark: #e7e7ee;
+    --color-grey: #d4d1c2;
     /* Navbar height */
     --height-navbar: 72px;
     /* Transitions */
     --tr-fast: all 0.25s linear;
     --tr-normal: all 0.5s linear;
     /* Shadow */
-    --shadow-normal: 0 2px 16px rgba(102, 102, 102, 0.61);
-    --shadow-small: 0 2px 2px var(--color-black-light);
+    --shadow-normal: 0 2px 16px var(--color-grey);
+    --shadow-small: 0 2px 2px var(--color-grey);
 }
 /* RESET */
 /* Set rem */
@@ -73,6 +79,7 @@ html, body {
     word-break: break-word;
     color: var(--color-black);
     font-family: var(--ff-normal);
+    background-color: var(--color-white);
 }
 /* Border box */
 *, *::before, *::after {
@@ -99,31 +106,34 @@ p, form, nav, footer, header {
 h5 {
     font-size: var(--fs-500);
     line-height: var(--lh-max);
-    font-family: var(--ff-heading);
+    font-family: var(--ff-normal);
 }
 
 h4 {
     font-size: var(--fs-600);
     line-height: var(--lh-max);
-    font-family: var(--ff-heading);
+    font-family: var(--ff-normal);
 }
 
 h3 {
     font-size: var(--fs-700);
     line-height: var(--lh-min);
     font-family: var(--ff-heading);
+    font-weight: 400;
 }
 
 h2 {
     font-size: var(--fs-800);
     line-height: var(--lh-min);
     font-family: var(--ff-heading);
+    font-weight: 400;
 }
 
 h1 {
     font-size: var(--fs-900);
     line-height: var(--lh-min);
     font-family: var(--ff-heading);
+    font-weight: 400;
 }
 
 a {

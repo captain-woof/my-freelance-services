@@ -6,10 +6,7 @@ export const getServerSideProps = async ({ res }: GetServerSidePropsContext) => 
 
     // Initializing pages with static pages
     const pages = [
-        { url: `${origin}`, priority: 2.0 },
-        { url: `${origin}/services`, priority: 2.0 },
-        { url: `${origin}/about`, priority: 1.0 },
-        { url: `${origin}/contact`, priority: 1.0 },
+        { url: `${origin}`, priority: 1.0 }
     ]
 
     // Making the sitemap
